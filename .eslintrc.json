@@ -27,6 +27,8 @@
       "object-shorthand": "off",
       "class-methods-use-this": "off",
       "import/newline-after-import": "off",
+      "arrow-body-style":"off",
+      "no-use-before-define":"off",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
       "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
