@@ -6,14 +6,15 @@ const About = () => (
       About Bootcamp
     </h1>
 
-    <p className="flex justify-center font-poppins font-semibold mx-32 mt-20 text-xl text-black">
+    <p className="justify-center font-poppins font-semibold mx-32 mt-20 text-xl text-black">
       ACM Summer Bootcamp is an all-immersive Bootcamp for novices and pros
       alike. We aim to provide you with a hands-on learning experience through
-      our accomplished student mentors. Through project-based learning, we will
+      our accomplished student mentors. Through
+      <span className="text-yellow-500"> project-based learning</span>, we will
       help you get started in 4 exciting domains:
     </p>
 
-    <h2 className="flex justify-center font-poppins font-bold mt-12 text-3xl text-yellow-500 text-opacity-100">
+    <h2 className="flex justify-center font-poppins font-semibold mt-12 text-3xl text-yellow-500 text-opacity-100">
       Web Development, App Development, Machine Learning and Design
     </h2>
 
