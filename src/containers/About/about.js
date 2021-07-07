@@ -7,7 +7,7 @@ const About = () => (
       About Bootcamp
     </h1>
 
-    <p className="text-left xs:justify-center xs:text-center font-poppins font-semibold mx-10 xs:mx-32 mt-10 xs:mt-20 text-lg xs:text-xl text-black">
+    <p className="text-left xs:justify-center xs:text-center font-poppins font-semibold mx-10 xs:mx-32 mt-10 xs:mt-20 text-base xs:text-xl text-black">
       ACM Summer Bootcamp is an all-immersive Bootcamp for novices and pros
       alike. We aim to provide you with a hands-on learning experience through
       our accomplished student mentors. Through
@@ -15,16 +15,16 @@ const About = () => (
       help you get started in 4 exciting domains:
     </p>
 
-    <h2 className="text-left xs:justify-center xs:text-center font-poppins font-semibold mr-8 xs:ml-8 mt-8 xs:mt-12 ml-10 xs:mr-10 text-xl xs:text-3xl text-yellow-500 text-opacity-100">
+    <h2 className="text-left xs:justify-center xs:text-center font-poppins font-semibold mr-8 xs:ml-8 mt-8 xs:mt-12 ml-10 xs:mr-10 text-lg xs:text-3xl text-yellow-500 text-opacity-100">
       Web Development, App Development, Machine Learning and Design
     </h2>
 
-    <p className="flex text-left xs:justify-center xs:text-center font-poppins font-semibold mx-10 mt-8 xs:mt-12 text-lg xs:text-xl text-black">
+    <p className="flex text-left xs:justify-center xs:text-center font-poppins font-semibold mx-10 mt-8 xs:mt-12 text-base xs:text-xl text-black">
       Within two weeks, you will have gained diverse technical knowledge and
       also have incredible projects under your belt.
     </p>
 
-    <p className="text-left xs:justify-center xs:text-center font-poppins font-semibold mx-10 xs:mx-40 mt-8 mb-10 text-lg xs:text-xl text-black">
+    <p className="text-left xs:justify-center xs:text-center font-poppins font-semibold mx-10 xs:mx-40 mt-8 mb-10 text-base xs:text-xl text-black">
       Not to forget, we will provide
       <span className="text-yellow-500"> certificates</span> upon successful
       completion of the Bootcamp and give personal
