@@ -6,7 +6,6 @@ import LangingGlow from "../../images/yellow-glow.svg";
 import Twitter from "../../images/Twitter.svg";
 import Instagram from "../../images/Insta.svg";
 import LinkedIn from "../../images/linkedin.svg";
-import DiscordLogo from "../../images/Discord.svg";
 import DiscordMobile from "../../images/discord-mobile.svg";
 import DiscordLanding from "../../images/discord-landing.svg";
 
@@ -53,7 +52,7 @@ const Landing = () => {
         </div>
         <div>
           <img
-            className="absolute right-0 top-0 xl:w-160 xl:top-0 lg:w-6/12 invisible md:visible md:w-7/12 md:top-12"
+            className="absolute right-0 top-0 xl:w-160 xl:top-0 lg:w-5/12 invisible md:visible md:w-7/12 md:top-12 lg:mt-16 -z-10"
             src={LandingLogo}
             alt="LandingLogo"
             width="700"
@@ -63,7 +62,7 @@ const Landing = () => {
         {/* Landing glow - mobile view */}
         <div>
           <img
-            className="absolute right-0 top-0 md:hidden xs:w-4/5 xs:top-10"
+            className="absolute -z-10 right-0 top-0 md:hidden xs:w-4/5 xs:top-10"
             src={LangingGlow}
             alt="LandingLogo"
             width="700"
@@ -93,8 +92,8 @@ const Landing = () => {
             <img className="mr-6 h-5 w-5" src={LinkedIn} alt="LinkedIn" />
           </a>
         </div>
-        <div className="justify-self-end">
-          <a className="bg-black" href="https://discord.com/">
+        <div className="justify-self-end z-100">
+          <a className="" href="https://discord.com/">
             <img
               className="cursor-pointer"
               src={DiscordLanding}

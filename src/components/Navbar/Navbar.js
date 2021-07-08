@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/logo.svg";
+import Hamburger from "../../images/Hamburger.svg";
+import Dropdown from "./Dropdown";
+
 const Navbar = () => {
   return (
     <>
@@ -11,6 +14,14 @@ const Navbar = () => {
         <Link to="/" className="w-28 sm:w-48">
           <img src={Logo} alt="logo" />
         </Link>
+
+        {/* Hamberger Icon */}
+        {/* <div className="visible mr-6 md:hidden">
+          <img src={Hamburger} alt="Ham" />
+        </div> */}
+        <div className="md:hidden fixed top-8 right-4">
+          <Dropdown />
+        </div>
 
         <div className="mr-20 md:block hidden">
           <Link to="/" className="font-500 mr-12 text-xl text-custom">
