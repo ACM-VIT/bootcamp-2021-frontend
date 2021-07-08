@@ -55,13 +55,13 @@ const Features = () => (
     </div>
 
     <img
-      className="invisible xs:visible xs:absolute xs:-top-40 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto"
+      className="hidden xl:inline-block xl:absolute xs:-top-40 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto"
       src={Logo}
       alt="logo"
     />
 
     <img
-      className="absolute top-12 right-0 lg:invisible"
+      className="absolute top-12 right-0 xl:hidden"
       src={Shade}
       alt="shade"
     />

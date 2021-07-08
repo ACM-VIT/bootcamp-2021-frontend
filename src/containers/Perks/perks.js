@@ -66,13 +66,13 @@ const Perks = () => (
       </div>
 
       <img
-        className="invisible lg:visible xs:absolute xs:top-0 xs:left-0 xs:-mt-6 h-1 w-1 h-auto w-auto"
+        className="hidden lg:inline-block xs:absolute xs:top-0 xs:left-0 xs:-mt-6 h-1 w-1 h-auto w-auto"
         src={Logo}
         alt="logo"
       />
 
       <img
-        className="absolute top-40 right-0 lg:invisible"
+        className="absolute top-40 right-0 lg:hidden"
         src={Shade}
         alt="shade"
       />
