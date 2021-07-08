@@ -4,7 +4,7 @@ import Shade from "../../images/shade2.svg";
 import Logo from "../../images/perklogo.svg";
 
 const Perks = () => (
-  <div className="text-left lg:float-right lg:-mr-16 xl:-mr-4">
+  <div className="relative text-left lg:float-right lg:-mr-16 xl:-mr-4">
     <h1 className="flex font-poppins font-bold mt-32 ml-8 sm:ml-16 md:ml-20 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
       Perks and Benefits
     </h1>

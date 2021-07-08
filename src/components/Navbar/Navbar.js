@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/logo.svg";
-import Hamburger from "../../images/Hamburger.svg";
 import Dropdown from "./Dropdown";
 
 const Navbar = () => {
