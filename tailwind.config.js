@@ -10,6 +10,7 @@ module.exports = {
         152: "38rem",
         140: "35rem",
         120: "30rem",
+        150: "37.5rem",
       },
       zIndex: {
         "-10": "-10",
@@ -17,6 +18,7 @@ module.exports = {
       lineHeight: {
         16: "4rem",
         9: "3rem",
+        7.5: "1.875",
       },
       inset: {
         112: "28rem",
