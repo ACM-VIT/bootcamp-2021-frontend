@@ -8,7 +8,6 @@ const AccordionSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 100vh;
   background: white;
 `;
@@ -57,7 +56,7 @@ const Accordion = () => {
   };
 
   return (
-    <AccordionSection className="justify-left md:justify-center">
+    <AccordionSection className="justify-left md:justify-center w-full mb-24">
       <Container className="w-full mt-16 md:mt-24 md:w-9/12 mx-6">
         <div className="text-2xl sm:text-5xl pl-6 sm:text-center mb-8 md:mb-24 text-custom font-600">
           FAQS
