@@ -4,19 +4,19 @@ import Shade from "../../images/shade2.svg";
 import Logo from "../../images/perklogo.svg";
 
 const Perks = () => (
-  <div className="relative text-left lg:float-right lg:-mr-16 xl:-mr-4">
-    <h1 className="flex font-poppins font-bold mt-32 ml-8 sm:ml-16 md:ml-20 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
+  <div className="relative mt-32 text-left pb-56 overflow-hidden">
+    <h1 className="lg:text-right font-poppins font-bold mt-32 pl-8 lg:pr-28 md:pl-32 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight overflow-hidden">
       Perks and Benefits
     </h1>
 
-    <div className="text-left md:flex-col sm:ml-10 md:-ml-10 -mt-4 lg:mt-6 lg:ml-4 mr-10">
+    <div className="text-left md:flex-col -mt-4 lg:mt-6">
       <div className="flex lg:flex-row-reverse mt-16 ml-8 md:ml-32">
         <img
           className="h-2.5 w-2.5 sm:h-auto sm:w-auto mt-2 mr-28 xs:mr-28"
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Build a diverse portfolio
         </p>
       </div>
@@ -27,7 +27,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Gain industry-relevant skills
         </p>
       </div>
@@ -38,7 +38,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Mentorship by experienced devs
         </p>
       </div>
@@ -49,7 +49,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Certificates upon completion
         </p>
       </div>
@@ -60,19 +60,19 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Shout-outs on our Instagram handle
         </p>
       </div>
 
       <img
-        className="invisible xs:visible xs:absolute xs:top-0 xs:left-0 xs:-mt-6 h-1 w-1 lg:h-auto lg:w-auto"
+        className="hidden lg:inline-block xs:absolute xs:top-0 xs:left-0 xs:-mt-6 h-1 w-1 h-auto w-auto"
         src={Logo}
         alt="logo"
       />
 
       <img
-        className="absolute top-36 right-0 lg:invisible"
+        className="absolute top-40 right-0 lg:hidden -z-20"
         src={Shade}
         alt="shade"
       />

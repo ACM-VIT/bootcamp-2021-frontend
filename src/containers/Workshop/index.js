@@ -8,7 +8,7 @@ const ColoredCard = ({ title }) => {
   return <div>Colored Card{title}</div>;
 };
 
-const WorkshopCard = ({ title, subtitle, color, isActive }) => {
+const WorkshopCard = ({ title, subtitle, isActive }) => {
   console.log(`$${title} active > ${isActive}`);
   return (
     <div>
