@@ -8,7 +8,6 @@ const AccordionSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
   height: 100vh;
   background: white;
@@ -16,8 +15,6 @@ const AccordionSection = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 10%;
-  width: 1000px;
 `;
 
 const Wrap = styled.div`
@@ -26,15 +23,10 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   text-align: center;
   margin-top: 10px;
   border-radius: 20px 20px 20px 20px;
   cursor: pointer;
-  h1 {
-    padding: 1.3rem 2rem;
-    font-size: 1.2rem;
-  }
   span {
     margin-right: 1.5rem;
   }
@@ -45,7 +37,6 @@ const Wrap = styled.div`
 const Dropdown = styled.div`
   background: white;
   color: #333333;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,9 +45,6 @@ const Dropdown = styled.div`
   border: 2px solid #f0b051;
   border-top: none;
   border-radius: 0px 0px 20px 20px;
-  p {
-    font-size: 1.2rem;
-  }
 `;
 
 const Accordion = () => {
@@ -72,20 +60,23 @@ const Accordion = () => {
   };
 
   return (
-    <AccordionSection>
-      <Container>
-        <div className="text-5xl text-center mb-24 text-custom font-600">
+    <AccordionSection className=" justify-left md:justify-center;">
+      <Container className="w-full mt-16 md:mt-24 md:w-9/12 mx-6">
+        <div className="text-2xl sm:text-5xl pl-6 sm:text-center mb-8 md:mb-24 text-custom font-600">
           FAQS
         </div>
         {Data.map((item, index) => {
           return (
             <>
               <Wrap
+                className="mx-6"
                 round={clicked === index ? "0" : "20px"}
                 onClick={() => toggle(index)}
                 key={Data.index}
               >
-                <h1>{item.question}</h1>
+                <h1 className="py-4 px-4 text-md sm:py-5 sm:px-8 sm:text-xl">
+                  {item.question}
+                </h1>
                 <span>
                   {clicked === index ? (
                     <img src={UpArrowHead} alt="" />
@@ -97,8 +88,8 @@ const Accordion = () => {
 
               {clicked === index ? (
                 <div>
-                  <Dropdown>
-                    <p>{item.answer}</p>
+                  <Dropdown className="mx-6 ">
+                    <p className="text-md sm:text-xl">{item.answer}</p>
                   </Dropdown>
                 </div>
               ) : null}
