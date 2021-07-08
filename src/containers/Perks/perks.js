@@ -4,7 +4,7 @@ import Shade from "../../images/shade2.svg";
 import Logo from "../../images/perklogo.svg";
 
 const Perks = () => (
-  <div className="relative text-left lg:float-right lg:-mr-16 xl:-mr-4">
+  <div className="relative text-left lg:-mr-16 xl:-mr-4 overflow-hidden">
     <h1 className="flex font-poppins font-bold mt-32 ml-8 sm:ml-16 md:ml-20 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
       Perks and Benefits
     </h1>
@@ -66,7 +66,7 @@ const Perks = () => (
       </div>
 
       <img
-        className="invisible xs:visible xs:absolute xs:top-0 xs:left-0 xs:-mt-6 h-1 w-1 lg:h-auto lg:w-auto"
+        className="invisible lg:visible xs:absolute xs:top-0 xs:left-0 xs:-mt-6 h-1 w-1 h-auto w-auto"
         src={Logo}
         alt="logo"
       />

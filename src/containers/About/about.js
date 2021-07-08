@@ -15,7 +15,7 @@ const About = () => (
       help you get started in 4 exciting domains:
     </p>
 
-    <h2 className="text-left sm:justify-center sm:text-center font-poppins font-semibold mx-10 sm:mx-20 md:mx-20 lg:mx-32   mt-8 sm:mt-12 ml-10 xs:mr-10 text-lg sm:text-2xl md:text-3xl text-yellow-500 text-opacity-100">
+    <h2 className="text-left sm:justify-center sm:text-center font-poppins font-semibold mt-8 sm:mt-12 text-lg sm:text-2xl md:text-3xl text-yellow-500 text-opacity-100">
       Web Development, App Development, Machine Learning and Design
     </h2>
 
