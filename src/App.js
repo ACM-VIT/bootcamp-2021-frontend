@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Landing from "./containers/Landing/Landing";
 import Accordion from "./components/Faqs/Accordion";
 import Footer from "./components/Footer/Footer";
-import Workshop from "./components/Workshop";
+import Workshop from "./containers/Workshop";
+
 import "./App.css";
 
 function App() {

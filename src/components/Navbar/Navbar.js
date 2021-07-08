@@ -23,15 +23,15 @@ const Navbar = () => {
         </div>
 
         <div className="mr-20 md:block hidden">
-          <Link to="/" className="font-500 mr-12 text-xl text-custom">
+          <a href="#workshops" className="font-500 mr-12 text-xl text-custom">
             Workshops
-          </Link>
-          <Link to="/" className="font-500 mr-12 text-xl text-custom">
+          </a>
+          <a href="#features" className="font-500 mr-12 text-xl text-custom">
             Features
-          </Link>
-          <Link to="/" className="font-500 mr-12 text-xl text-custom">
+          </a>
+          <a href="#faqs" className="font-500 mr-12 text-xl text-custom">
             FAQs
-          </Link>
+          </a>
         </div>
       </nav>
     </>

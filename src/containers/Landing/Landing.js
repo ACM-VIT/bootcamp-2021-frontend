@@ -18,7 +18,7 @@ const Landing = () => {
   return (
     <>
       <section className="flex pl-6 pr-6 md:pr-0 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24 md:w-120 lg:w-192 justify-start">
-        <div className="mt-36 md:mt-48 grid z-100">
+        <div className="mt-36 md:mt-32 grid z-100">
           <div>
             <h3 className="font-600 text-custom">ACM-VIT Initiative</h3>
             <p className="font-600 mt-2 text-landing-xsmall leading-16 sm:text-landing-large md:w-120 lg:w-192 text-custom md:text-6xl xl:text-landing-large lg:text-6xl">
@@ -52,10 +52,10 @@ const Landing = () => {
         </div>
         <div>
           <img
-            className="absolute right-0 top-0 xl:w-160 xl:top-0 lg:w-5/12 invisible md:visible md:w-7/12 md:top-12 lg:mt-16 -z-10"
+            className="absolute right-0 xl:-top-8 xl:w-152 xl:top-0 lg:w-5/12 invisible md:visible md:w-7/12 md:top-12 lg:mt-16 -z-10"
             src={LandingLogo}
             alt="LandingLogo"
-            width="700"
+            width="600"
           />
         </div>
 
