@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "craco": "^0.0.3",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-node": "^4.1.0",
