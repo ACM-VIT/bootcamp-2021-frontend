@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-yellow-grad {
+  background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
+}
+
+.text-yellow-grad {
+  background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-discord {
+  background-color: #5865f2;
+}
+
+.text-custom {
+  color: #333333;
+}
+
+/* .font-landing-lg {
+  font-size: 4.4rem;
+  line-height: 4.5rem;
+}
+
+.font-landing-xs {
+  font-size: 2rem;
+  line-height: 2rem;
+} */
