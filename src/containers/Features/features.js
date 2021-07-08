@@ -55,7 +55,7 @@ const Features = () => (
     </div>
 
     <img
-      className="invisible xs:visible xs:absolute xs:top-0 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto"
+      className="invisible xs:visible xs:absolute xs:-top-40 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto"
       src={Logo}
       alt="logo"
     />
