@@ -60,7 +60,7 @@ const Accordion = () => {
       id="faqs"
       className="justify-left md:justify-center w-full mb-24"
     >
-      <Container className="w-full mt-16 md:mt-24 md:w-9/12 mx-6">
+      <Container className="w-full md:w-9/12 mx-6">
         <div className="text-2xl sm:text-5xl pl-6 sm:text-center mb-8 md:mb-24 mt-20 text-custom font-600">
           FAQS
         </div>

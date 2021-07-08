@@ -5,7 +5,7 @@ import Shade from "../../images/shade.svg";
 
 /* Responsive Feature Page */
 const Features = () => (
-  <div className="relative sm:ml-10 md:ml-16" id="features">
+  <div className="relative sm:ml-10 md:ml-16 pt-4" id="features">
     <h1 className="flex left-0 font-poppins font-bold mt-32 md:mt-44 ml-8 xs:ml-8 sm:ml-16 md:ml-24 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
       Features
     </h1>
@@ -16,7 +16,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
         Two-week long Bootcamp covering 4 domains
       </p>
     </div>
@@ -27,7 +27,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
         Interactive code-along sessions
       </p>
     </div>
@@ -38,7 +38,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
         Access to domain-specific resources
       </p>
     </div>
@@ -49,19 +49,19 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
         Test your skills with exciting challenges
       </p>
     </div>
 
     <img
-      className="hidden xl:inline-block xl:absolute xs:-top-40 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto"
+      className="hidden xl:inline-block xl:absolute xs:-top-40 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto pt-40"
       src={Logo}
       alt="logo"
     />
 
     <img
-      className="absolute top-12 right-0 xl:hidden"
+      className="absolute top-12 right-0 xl:hidden -z-10"
       src={Shade}
       alt="shade"
     />

@@ -4,7 +4,7 @@ import Shade from "../../images/shade2.svg";
 import Logo from "../../images/perklogo.svg";
 
 const Perks = () => (
-  <div className="relative mt-32 text-left pb-40 overflow-hidden">
+  <div className="relative mt-32 text-left pb-56 overflow-hidden">
     <h1 className="lg:text-right font-poppins font-bold mt-32 pl-8 lg:pr-28 md:pl-32 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight overflow-hidden">
       Perks and Benefits
     </h1>
@@ -16,7 +16,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Build a diverse portfolio
         </p>
       </div>
@@ -27,7 +27,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Gain industry-relevant skills
         </p>
       </div>
@@ -38,7 +38,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Mentorship by experienced devs
         </p>
       </div>
@@ -49,7 +49,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Certificates upon completion
         </p>
       </div>
@@ -60,7 +60,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black">
+        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
           Shout-outs on our Instagram handle
         </p>
       </div>
@@ -72,7 +72,7 @@ const Perks = () => (
       />
 
       <img
-        className="absolute top-40 right-0 lg:hidden"
+        className="absolute top-40 right-0 lg:hidden -z-20"
         src={Shade}
         alt="shade"
       />

@@ -82,18 +82,34 @@ const Landing = () => {
       {/* Landing Bottom */}
       <section className="invisible md:visible px-24 grid grid-cols-2 mt-16">
         <div className="flex">
-          <a href="https://twitter.com/ACM_VIT">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ACM_VIT"
+          >
             <img className="mr-6 h-5 w-5" src={Twitter} alt="Twitter" />
           </a>
-          <a href="https://instagram.com/acmvit">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/acmvit"
+          >
             <img className="mr-6 h-5 w-5" src={Instagram} alt="Instagram" />
           </a>
-          <a href="https://www.linkedin.com/company/acm-vit-chapter/mycompany/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/company/acm-vit-chapter/mycompany/"
+          >
             <img className="mr-6 h-5 w-5" src={LinkedIn} alt="LinkedIn" />
           </a>
         </div>
         <div className="justify-self-end z-100">
-          <a className="" href="https://discord.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://discord.com/"
+          >
             <img
               className="cursor-pointer"
               src={DiscordLanding}
