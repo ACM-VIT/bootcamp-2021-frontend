@@ -8,14 +8,12 @@ const AccordionSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+
   height: 100vh;
   background: white;
 `;
 
-const Container = styled.div`
-  position: absolute;
-`;
+const Container = styled.div``;
 
 const Wrap = styled.div`
   background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
@@ -55,12 +53,11 @@ const Accordion = () => {
     if (clicked === index) {
       return setClicked(null);
     }
-
     setClicked(index);
   };
 
   return (
-    <AccordionSection className=" justify-left md:justify-center;">
+    <AccordionSection className="justify-left md:justify-center">
       <Container className="w-full mt-16 md:mt-24 md:w-9/12 mx-6">
         <div className="text-2xl sm:text-5xl pl-6 sm:text-center mb-8 md:mb-24 text-custom font-600">
           FAQS
@@ -74,7 +71,7 @@ const Accordion = () => {
                 onClick={() => toggle(index)}
                 key={Data.index}
               >
-                <h1 className="py-4 px-4 text-md sm:py-5 sm:px-8 sm:text-xl">
+                <h1 className="py-4 px-4 text-md sm:py-5 sm:px-8 sm:text-xl w-full">
                   {item.question}
                 </h1>
                 <span>
@@ -88,7 +85,7 @@ const Accordion = () => {
 
               {clicked === index ? (
                 <div>
-                  <Dropdown className="mx-6 ">
+                  <Dropdown className="mx-6">
                     <p className="text-md sm:text-xl">{item.answer}</p>
                   </Dropdown>
                 </div>
