@@ -14,7 +14,6 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
-
       lineHeight: {
         16: "4rem",
         9: "3rem",
@@ -22,7 +21,6 @@ module.exports = {
       inset: {
         112: "28rem",
       },
-
       screens: {
         xs: "375px",
         sm: "640px",
@@ -30,19 +28,16 @@ module.exports = {
         lg: "1024px",
         xl: "1280px",
       },
-
       fontSize: {
         "landing-large": ["4.4rem", "4.5rem"],
         "landing-xsmall": ["2.6rem", "3rem"],
       },
-
       container: {
         center: true,
         padding: "2rem",
       },
     },
   },
-
   variants: {
     extend: {},
   },
