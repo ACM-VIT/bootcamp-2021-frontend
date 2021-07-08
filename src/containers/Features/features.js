@@ -5,8 +5,8 @@ import Shade from "../../images/shade.svg";
 
 /* Responsive Feature Page */
 const Features = () => (
-  <div className="relative" id="features">
-    <h1 className="flex left-0 font-poppins font-bold mt-32 md:mt-44 ml-8 xs:ml-8 sm:ml-16 md:ml-28 text-3xl xs:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
+  <div className="relative sm:ml-10 md:ml-16" id="features">
+    <h1 className="flex left-0 font-poppins font-bold mt-32 md:mt-44 ml-8 xs:ml-8 sm:ml-16 md:ml-24 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
       Features
     </h1>
 
@@ -61,7 +61,7 @@ const Features = () => (
     />
 
     <img
-      className="absolute top-36 right-0 lg:invisible"
+      className="absolute top-12 right-0 lg:invisible"
       src={Shade}
       alt="shade"
     />
