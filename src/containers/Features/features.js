@@ -6,61 +6,65 @@ import Shade from "../../images/shade.svg";
 /* Responsive Feature Page */
 const Features = () => (
   <div>
-    <h1 className="flex left-0 font-poppins font-bold mt-32 xs:mt-40 ml-8 xs:ml-28 text-4xl xs:text-5xl text-gray-900 text-opacity-90 tracking-tight">
+    <h1 className="flex left-0 font-poppins font-bold mt-32 md:mt-44 ml-8 xs:ml-8 sm:ml-16 md:ml-28 text-3xl xs:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
       Features
     </h1>
 
-    <div className="flex text-left -ml-2 xs:ml-0.5 mr-12 mt-12 xs:mt-16">
+    <div className="flex text-left -ml-2 xs:-ml-20 sm:-ml-10 md:ml-0.5 mr-12 mt-12 xs:mt-16">
       <img
-        className="h-2.5 w-2.5 xs:h-auto xs:w-auto ml-10 xs:ml-28"
+        className="h-2.5 w-2.5 sm:h-auto sm:w-auto ml-10 xs:ml-28"
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 ml-3 xs:ml-8 text-lg xs:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
         Two-week long Bootcamp covering 4 domains
       </p>
     </div>
 
-    <div className="flex text-left -ml-2 xs:ml-0.5 mr-12 mt-10 xs:mt-16">
+    <div className="flex text-left -ml-2 xs:-ml-20 sm:-ml-10 md:ml-0.5 mr-12 mt-10 xs:mt-12">
       <img
-        className="h-2.5 w-2.5 xs:h-auto xs:w-auto ml-10 xs:ml-28"
+        className="h-2.5 w-2.5 sm:h-auto sm:w-auto ml-10 xs:ml-28"
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 ml-3 xs:ml-8 text-lg xs:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
         Interactive code-along sessions
       </p>
     </div>
 
-    <div className="flex text-left -ml-2 xs:ml-0.5 mr-12 mt-10 xs:mt-16">
+    <div className="flex text-left -ml-2 xs:-ml-20 sm:-ml-10 md:ml-0.5 mr-12 mt-10 xs:mt-12">
       <img
-        className="h-2.5 w-2.5 xs:h-auto xs:w-auto ml-10 xs:ml-28"
+        className="h-2.5 w-2.5 sm:h-auto sm:w-auto ml-10 xs:ml-28"
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 ml-3 xs:ml-8 text-lg xs:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
         Access to domain-specific resources
       </p>
     </div>
 
-    <div className="flex text-left -ml-2 xs:ml-0.5 mr-12 mt-10 xs:mt-16">
+    <div className="flex text-left -ml-2 xs:-ml-20 sm:-ml-10 md:ml-0.5 mr-12 mt-10 xs:mt-12">
       <img
-        className="h-2.5 w-2.5 xs:h-auto xs:w-auto ml-10 xs:ml-28"
+        className="h-2.5 w-2.5 sm:h-auto sm:w-auto ml-10 xs:ml-28"
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 ml-3 xs:ml-8 text-lg xs:text-2xl text-black">
+      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black">
         Test your skills with exciting challenges
       </p>
     </div>
 
     <img
-      className="invisible xs:visible xs:absolute xs:top-0 xs:right-0 xs:-mt-6 h-1 w-1 xs:h-auto xs:w-auto"
+      className="invisible xs:visible xs:absolute xs:top-0 xs:right-0 xs:-mt-6 h-1 w-1 lg:h-96 lg:w-96 lg:h-auto lg:w-auto"
       src={Logo}
       alt="logo"
     />
 
-    <img className="absolute top-40 right-0" src={Shade} alt="shade" />
+    <img
+      className="absolute top-36 right-0 lg:invisible"
+      src={Shade}
+      alt="shade"
+    />
   </div>
 );
 
