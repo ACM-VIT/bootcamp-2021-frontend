@@ -5,6 +5,7 @@ import Features from "./containers/Features/features";
 import Perks from "./containers/Perks/perks";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./containers/Landing/Landing";
+import FaqSection from "./components/Faqs/FaqSection";
 import Accordion from "./components/Faqs/Accordion";
 import Footer from "./components/Footer/Footer";
 import WorkshopSection from "./containers/Workshop";
@@ -22,7 +23,7 @@ function App() {
         <WorkshopSection />
         <Features />
         <Perks />
-        <Accordion />
+        <FaqSection />
         <Footer />
       </ToastProvider>
     </div>

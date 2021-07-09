@@ -1,0 +1,85 @@
+.faqcontainer {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+.faqheading {
+  font-family: "Poppins";
+  color: #333333;
+  /* text-align: center; */
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  font-size: 20px;
+  @apply text-left pl-12 md:text-center text-3xl sm:text-5xl;
+}
+
+/* p {
+  padding: 1em;
+  padding-top: 0px;
+} */
+
+.tab {
+  padding: 1em;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabscontainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tab-content {
+  font-size: 0.75rem;
+  max-height: 0;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+  background-color: white;
+  color: #333333;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+.tab input:checked + label {
+  color: rgba(255, 255, 255);
+  border-radius: 12px 12px 0px 0px;
+}
+
+.tab label {
+  font-size: 1em;
+  padding: 1em;
+  background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+.tab label::after {
+  float: right;
+  right: 0;
+  top: 0;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1em;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.tab input + label::after {
+  content: url("../../images/Down-ArrowHead.svg");
+  filter: invert(50%);
+}
+
+.tab input:checked + label::after {
+  content: url("../../images//Up-ArrowHead.svg");
+  filter: invert(0%);
+}
