@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import axios from "axios";
 import qs from "qs";
@@ -12,6 +12,7 @@ import Instagram from "../../images/Insta.svg";
 import LinkedIn from "../../images/linkedin.svg";
 import DiscordMobile from "../../images/discord-mobile.svg";
 import DiscordLanding from "../../images/discord-landing.svg";
+import CalendarLogo from "../../images/Calendar.svg";
 
 const Landing = () => {
   const currentDate = new Date();
@@ -22,7 +23,16 @@ const Landing = () => {
 
   // store user email on change
   const [email, setEmail] = useState("");
+  const [registered, setRegistered] = useState(false);
 
+  useEffect(() => {
+    if (localStorage.getItem("tk")) {
+      setRegistered(true);
+    }
+    return () => {
+      setRegistered(false);
+    };
+  }, []);
   const addUserToList = () => {
     if (email.length === 0) {
       showToast({
@@ -48,6 +58,7 @@ const Landing = () => {
       } = res;
       if (success) {
         showToast({ title: res.data.msg, bgColor: "green", textColor: "#fff" });
+        localStorage.setItem("tk", true);
       } else {
         showToast({ title: res.data.msg, bgColor: "red", textColor: "#fff" });
       }
@@ -84,13 +95,32 @@ const Landing = () => {
                 value={email}
               />
             </div>
-            <button
-              className="mt-3 md:mt-0 xs:w-40 font-500 bg-yellow-grad text-white md:w-36 h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
-              type="button"
-              onClick={() => addUserToList()}
-            >
-              RSVP now
-            </button>
+            {registered ? (
+              <button
+                type="button"
+                className="mt-3 md:mt-0 font-500 bg-yellow-grad text-white h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
+                // className="w-40 h-10 md:w-64 md:h-16 bg-yellow-grad rounded-md md:rounded-xl text-white"
+              >
+                <div className="flex">
+                  <img
+                    className="w-3 md:w-6"
+                    src={CalendarLogo}
+                    alt="Calendar"
+                  />
+                  <span className="pl-2 md:pl-4 text-xs md:text-xl font-500">
+                    Add to calendar
+                  </span>
+                </div>
+              </button>
+            ) : (
+              <button
+                className="mt-3 md:mt-0 xs:w-40 font-500 bg-yellow-grad text-white md:w-36 h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
+                type="button"
+                onClick={() => addUserToList()}
+              >
+                RSVP now
+              </button>
+            )}
           </div>
         </div>
         <div>

@@ -13,7 +13,6 @@ ReactDOM.render(
     <GoogleReCaptchaProvider reCaptchaKey="6Ld9aoUbAAAAABWWhEzZp_-8FkCCc23QMLOW4EfO">
       <GoogleReCaptcha
         onVerify={(token) => {
-          console.log("Token", token);
           window.sessionStorage.setItem("token", token);
         }}
       />

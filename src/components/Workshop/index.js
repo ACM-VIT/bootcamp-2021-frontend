@@ -9,7 +9,7 @@ const workshopComponent = ({ title, subtitle, color }) => {
           <div className="text-white workshop-card-title text-5xl mb-2 font-600 mt-2">
             {title}
           </div>
-          <div className="text-xl text-white workshop-card-subtitle leading-8  md:leading-7.5 font-500">
+          <div className="text-xl text-white workshop-card-subtitle leading-8  md:leading-7.5 font-500 -z-10">
             {subtitle}
           </div>
           <div className="flex absolute workshop-card-font right-4 bottom-4">

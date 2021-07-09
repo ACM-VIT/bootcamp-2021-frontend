@@ -35,7 +35,7 @@ const WorkshopCard = ({
                   <h2 className="font-600 text-custom py-4 md:py-8 px-4 md:px-11 mt-4 text-4xl sm:text-5xl tracking-widest uppercase lg:mt-0 ">
                     {title}
                   </h2>
-                  <p className="font-500 text-custom text-xl sm:text-2xl px-4 md:px-11 leading-relaxed text-blueGray-500">
+                  <p className="font-500 text-custom text-xl sm:text-2xl px-4 md:px-11 leading-relaxed text-blueGray-500 -z-10">
                     {subtitle}
                   </p>
                   <p className="font-500 px-4 md:px-11 pt-6 mt-2">{desc}</p>
