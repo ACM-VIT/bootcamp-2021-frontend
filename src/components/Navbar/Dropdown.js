@@ -32,7 +32,7 @@ function Nav() {
       >
         {(ref) => (
           <div
-            className="md:hidden border relative bg-white border-yellow-500 rounded-xl"
+            className="md:hidden border relative bg-white border-yellow-500 rounded-xl z-50"
             id="mobile-menu"
           >
             <button
@@ -44,19 +44,19 @@ function Nav() {
             </button>
             <div ref={ref} className="space-y-1 w-full mr-12 flex flex-col">
               <div className="mb-3 mt-10">
-                <a href="#" className="font-500 text-custom px-3">
+                <a href="#workshops" className="font-500 text-custom px-3">
                   Workshops
                 </a>
               </div>
 
               <div style={{ marginBottom: "12px" }}>
-                <a href="#" className="font-500 text-custom px-3">
+                <a href="#features" className="font-500 text-custom px-3">
                   Features
                 </a>
               </div>
 
               <div style={{ marginBottom: "28px" }}>
-                <a href="#" className="font-500 text-custom px-3">
+                <a href="#faqs" className="font-500 text-custom px-3">
                   FAQs
                 </a>
               </div>

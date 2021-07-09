@@ -17,7 +17,6 @@ const WorkshopCard = ({
   bColor,
   isActive,
 }) => {
-  // console.log(`$${title} active > ${isActive}`);
   return (
     <div>
       {isActive ? (
@@ -276,7 +275,7 @@ const WorkshopSection = () => {
                   <ResearchCard />
                 </div>
               ) : null}
-
+              
               {!component4Active ? (
                 <div onClick={() => transaction(4)}>
                   <DesignCard />

@@ -18,11 +18,12 @@ const Landing = () => {
   return (
     <>
       <section className="flex pl-6 pr-6 md:pr-0 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24 md:w-120 lg:w-192 justify-start">
-        <div className="mt-36 md:mt-32 grid z-100">
+        <div className="mt-36 md:mt-20 grid z-100">
           <div>
             <h3 className="font-600 text-custom">ACM-VIT Initiative</h3>
-            <p className="font-600 mt-2 text-landing-xsmall leading-16 sm:text-landing-large md:w-120 lg:w-192 text-custom md:text-6xl xl:text-landing-large lg:text-6xl">
-              Unlock your potential this summer!
+            <p className="font-600 mt-2 text-landing-xsmall md:leading-normal lg:leading-normal xl:leading-normal sm:text-landing-large md:w-120 lg:w-192 text-custom md:text-6xl xl:text-landing-large lg:text-6xl">
+              Unlock your potential this{" "}
+              <span className="text-yellow-400">summer!</span>
             </p>
           </div>
           <div className="flex flex-col md:flex-row mt-12">
@@ -34,9 +35,9 @@ const Landing = () => {
             </span>
           </div>
           <div className="mt-12 flex flex-col md:flex-row">
-            <div className="w-72 h-12 bg-yellow-grad rounded-xl">
+            <div className="w-full xs:w-72 h-12 bg-yellow-grad rounded-xl">
               <input
-                className="font-500 appearance-none rounded-xl border-2 border-yellow-200 text-md w-72 h-12 py-2 px-6 mr-2 leading-tight placeholder-yellow-400 focus:outline-none focus:shadow-outline"
+                className="font-500 appearance-none rounded-xl border-2 border-yellow-200 text-md w-full sm:w-72 h-12 py-2 px-6 mr-2 leading-tight placeholder-yellow-400 focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
                 placeholder="Enter your email"
@@ -80,20 +81,36 @@ const Landing = () => {
       </section>
 
       {/* Landing Bottom */}
-      <section className="invisible md:visible px-24 grid grid-cols-2 mt-16">
+      <section className="flex justify-between items-center invisible md:visible px-16 xl:px-24 grid grid-cols-2 mt-16">
         <div className="flex">
-          <a href="https://twitter.com/ACM_VIT">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ACM_VIT"
+          >
             <img className="mr-6 h-5 w-5" src={Twitter} alt="Twitter" />
           </a>
-          <a href="https://instagram.com/acmvit">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/acmvit"
+          >
             <img className="mr-6 h-5 w-5" src={Instagram} alt="Instagram" />
           </a>
-          <a href="https://www.linkedin.com/company/acm-vit-chapter/mycompany/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/company/acm-vit-chapter/mycompany/"
+          >
             <img className="mr-6 h-5 w-5" src={LinkedIn} alt="LinkedIn" />
           </a>
         </div>
         <div className="justify-self-end z-100">
-          <a className="" href="https://discord.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://discord.com/"
+          >
             <img
               className="cursor-pointer"
               src={DiscordLanding}

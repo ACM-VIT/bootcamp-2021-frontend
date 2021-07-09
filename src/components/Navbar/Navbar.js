@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="flex justify-between items-center pl-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24  mt-8 h-18 bg-white text-black relative"
+        className="flex justify-between items-center pl-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24  mt-8 h-18 text-black relative"
         role="navigation"
       >
         <Link to="/" className="w-28 sm:w-48">
