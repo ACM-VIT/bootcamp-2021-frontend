@@ -1,6 +1,9 @@
-import React from "react";
-import CountDown from "../../components/CountDown/CountDown";
+import React, { useState } from "react";
 
+import axios from "axios";
+import qs from "qs";
+
+import CountDown from "../../components/CountDown/CountDown";
 import LandingLogo from "../../images/Landing.svg";
 import LangingGlow from "../../images/yellow-glow.svg";
 import Twitter from "../../images/Twitter.svg";
@@ -15,6 +18,29 @@ const Landing = () => {
     currentDate.getMonth() === 11 && currentDate.getDate() > 23
       ? currentDate.getFullYear() + 1
       : currentDate.getFullYear();
+
+  // store user email on change
+  const [email, setEmail] = useState(null);
+
+  const addUserToList = () => {
+    return axios({
+      method: "post",
+      url: `http://localhost:4000/rsvp`,
+      data: qs.stringify({
+        email,
+        captcha: window.sessionStorage.getItem("token"),
+      }),
+      headers: {
+        "content-type": "application/x-www-form-urlencoded;charset=utf-8",
+      },
+    }).then((res) => {
+      const {
+        data: { success },
+      } = res;
+
+      // const {success} = res.success;
+    });
+  };
   return (
     <>
       <section className="flex pl-6 pr-6 md:pr-0 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24 md:w-120 lg:w-192 justify-start">
@@ -41,11 +67,14 @@ const Landing = () => {
                 id="email"
                 type="email"
                 placeholder="Enter your email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
             </div>
             <button
               className="mt-3 md:mt-0 xs:w-40 font-500 bg-yellow-grad text-white md:w-36 h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
               type="button"
+              onClick={() => addUserToList()}
             >
               RSVP now
             </button>
