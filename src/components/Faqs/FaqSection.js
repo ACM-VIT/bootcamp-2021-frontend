@@ -31,7 +31,7 @@ const Question = ({ id, question, answer }) => {
 
 const FaqSection = () => {
   return (
-    <article className="faqcontainer">
+    <article id="faqs" className="faqcontainer">
       <h1 className="faqheading">FAQS</h1>
       <div className="tabscontainer">
         {data.map((ques, key) => (
