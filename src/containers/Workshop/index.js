@@ -23,29 +23,33 @@ const WorkshopCard = ({
       {isActive ? (
         <div>
           {/** this is the card in expanded form -> visible when clicked */}
-          <div className="container items-center py-12">
-            <div className="text-5xl mt-8 text-custom text-center font-600 pb-16">
+          <div className="px-6 items-center py-12">
+            <div className="text-2xl md:text-5xl  mt-8 text-custom text-left md:text-center font-600 pb-16">
               Offered Workshops
             </div>
             <div
-              className={`mx-auto w-full md:w-full lg:w-258 xl:w-310 border-${bColor}-500 border-2 rounded-lg`}
+              className={`mx-auto w-full md:w-full lg:w-full xl:w-310 border-${bColor}-500 border-2 rounded-lg`}
             >
               <div className="flex flex-col items-start py-2 rounded-lg">
                 <div className="flex flex-col w-full text-blueGray-500">
-                  <h2 className="font-600 text-custom py-8 px-11 mt-4 text-5xl tracking-widest uppercase lg:mt-0 ">
+                  <h2 className="font-600 text-custom py-4 md:py-8 px-4 md:px-11 mt-4 text-4xl sm:text-5xl tracking-widest uppercase lg:mt-0 ">
                     {title}
                   </h2>
-                  <p className="font-500 text-custom text-2xl px-11 leading-relaxed text-blueGray-500">
+                  <p className="font-500 text-custom text-xl sm:text-2xl px-4 md:px-11 leading-relaxed text-blueGray-500">
                     {subtitle}
                   </p>
-                  <p className="font-500 px-11 pt-6 mt-2">{desc}</p>
+                  <p className="font-500 px-4 md:px-11 pt-6 mt-2">{desc}</p>
                   <a href={`${cLink}`} target="_blank" rel="noreferrer">
-                    <div className="px-7 pt-2 pb-6 md:px-11 md:pt-4 md:pb-9">
+                    <div className="px-4 pt-2 mt-4 pb-6 md:px-11 md:pt-4 md:pb-9">
                       <button
                         className={`w-40 h-10 md:w-64 md:h-16 bg-${color} rounded-md md:rounded-xl text-white`}
                       >
-                        <div className="flex ml-8">
-                          <img src={CalendarLogo} alt="Calendar" />
+                        <div className="flex pl-4">
+                          <img
+                            className="w-4"
+                            src={CalendarLogo}
+                            alt="Calendar"
+                          />
                           <span className="ml-2 md:ml-4 text-xs md:text-xl font-500">
                             Add to calendar
                           </span>
@@ -63,7 +67,7 @@ const WorkshopCard = ({
           <div className="">
             {/** this is the card in collapsed form -> visible when something else is clicked */}
             <button
-              className={`bg-${color} text-white hover:shadow-xl mr-2 xs:text-lg md:text-2xl flex justify-center items-center xs:w-24 xs:h-8 sm:w-48 sm:h-12 md:w-56 md:h-16 lg:h-20 lg:w-80 xl:w-96 xl:h-20 py-7 px-16 md:px-24 lg:px-40 rounded-2xl`}
+              className={`bg-${color} text-white mb-2 hover:shadow-xl text-lg md:text-2xl flex justify-center items-center sm:h-12 md:w-56 md:h-16 lg:h-20 lg:w-80 xl:w-96 xl:h-20 py-7 px-12 h-4 workshop-card-button workshop-card-button-4 workshop-card-button-2 sm:w-36 lg:px-40 rounded-2xl`}
             >
               {title}
             </button>
@@ -194,25 +198,34 @@ const WorkshopSection = () => {
       {isAllInactive() ? (
         <div className="">
           {}
-          <div className="text-5xl mt-24 text-custom text-center font-600 pb-16">
+          <div className="text-2xl md:text-5xl px-6 mt-24 text-custom text-left md:text-center font-600 pb-16">
             Offered Workshops
           </div>
-          <div className="flex px-16 justify-center items-center flex-wrap">
-            <div className="mr-8 mb-8 " onClick={() => transaction(1)}>
+          <div className="flex px-6 sm:px-16 justify-center xl:justify-around items-center flex-wrap">
+            <div
+              className="mr-0 mb-8 workshop-card-margin sm:mr-8 sm:mb-8 "
+              onClick={() => transaction(1)}
+            >
               <WorkshopComponent
                 title="Web Dev 101"
                 subtitle="Create a Personal Portfolio using React"
                 color="bg-red-grad"
               />
             </div>
-            <div className="mb-8" onClick={() => transaction(2)}>
+            <div
+              className="mr-0 mb-8 workshop-card-margin sm:mr-8 sm:mb-8"
+              onClick={() => transaction(2)}
+            >
               <WorkshopComponent
                 title="App Dev 101"
                 subtitle="Headfirst into Flutter"
                 color="bg-blue-grad"
               />
             </div>
-            <div className="mr-8 mb-8" onClick={() => transaction(3)}>
+            <div
+              className="mr-0 mb-8 workshop-card-margin sm:mr-8 sm:mb-8"
+              onClick={() => transaction(3)}
+            >
               <WorkshopComponent
                 title="ML 101"
                 subtitle="Gesture Control Your Screen using Python!
@@ -220,7 +233,10 @@ const WorkshopSection = () => {
                 color="bg-yellow-grad"
               />
             </div>
-            <div className="mb-8" onClick={() => transaction(4)}>
+            <div
+              className="mr-0 mb-8 workshop-card-margin sm:mr-8 sm:mb-8"
+              onClick={() => transaction(4)}
+            >
               <WorkshopComponent
                 title="Design 101"
                 subtitle="Create a Personal Portfolio using React"
@@ -258,7 +274,7 @@ const WorkshopSection = () => {
             ) : null}
           </div>
           <div>
-            <div className="flex justify-between sm:px-8 xs:px-4 md:px-16 lg:px-20 xl:px-28">
+            <div className="flex justify-between column items-center sm:px-6 px-6 md:px-16 lg:px-20 xl:px-28">
               {!component1Active ? (
                 <div onClick={() => transaction(1)}>
                   <WebCard />
