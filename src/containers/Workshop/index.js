@@ -8,12 +8,16 @@ import Data from "./Data";
 
 import CalendarLogo from "../../images/Calendar.svg";
 
-// const ColoredCard = ({ title }) => {
-//   return <div>Colored Card{title}</div>;
-// };
-
-const WorkshopCard = ({ title, subtitle, desc, color, bColor, isActive }) => {
-  console.log(`$${title} active > ${isActive}`);
+const WorkshopCard = ({
+  title,
+  subtitle,
+  desc,
+  cLink,
+  color,
+  bColor,
+  isActive,
+}) => {
+  // console.log(`$${title} active > ${isActive}`);
   return (
     <div>
       {isActive ? (
@@ -24,9 +28,9 @@ const WorkshopCard = ({ title, subtitle, desc, color, bColor, isActive }) => {
               Offered Workshops
             </div>
             <div
-              className={`mx-auto w-310 border-${bColor}-500 border-2 rounded-lg`}
+              className={`mx-auto w-full md:w-full lg:w-258 xl:w-310 border-${bColor}-500 border-2 rounded-lg`}
             >
-              <div className="flex flex-col items-start py-2 rounded-lg lg:flex-row">
+              <div className="flex flex-col items-start py-2 rounded-lg">
                 <div className="flex flex-col w-full text-blueGray-500">
                   <h2 className="font-600 text-custom py-8 px-11 mt-4 text-5xl tracking-widest uppercase lg:mt-0 ">
                     {title}
@@ -35,18 +39,14 @@ const WorkshopCard = ({ title, subtitle, desc, color, bColor, isActive }) => {
                     {subtitle}
                   </p>
                   <p className="font-500 px-11 pt-6 mt-2">{desc}</p>
-                  <a
-                    href="https://calendar.google.com/calendar/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="px-11 pt-4 pb-9">
+                  <a href={`${cLink}`} target="_blank" rel="noreferrer">
+                    <div className="px-7 pt-2 pb-6 md:px-11 md:pt-4 md:pb-9">
                       <button
-                        className={`w-64 h-16 bg-${color} rounded-xl text-white`}
+                        className={`w-40 h-10 md:w-64 md:h-16 bg-${color} rounded-md md:rounded-xl text-white`}
                       >
                         <div className="flex ml-8">
                           <img src={CalendarLogo} alt="Calendar" />
-                          <span className="ml-4 text-xl font-500">
+                          <span className="ml-2 md:ml-4 text-xs md:text-xl font-500">
                             Add to calendar
                           </span>
                         </div>
@@ -63,7 +63,7 @@ const WorkshopCard = ({ title, subtitle, desc, color, bColor, isActive }) => {
           <div className="">
             {/** this is the card in collapsed form -> visible when something else is clicked */}
             <button
-              className={`bg-${color} text-white text-2xl flex justify-center items-center w-96 h-20 py-7 px-40 rounded-2xl`}
+              className={`bg-${color} text-white hover:shadow-xl mr-2 xs:text-lg md:text-2xl flex justify-center items-center xs:w-24 xs:h-8 sm:w-48 sm:h-12 md:w-56 md:h-16 lg:h-20 lg:w-80 xl:w-96 xl:h-20 py-7 px-16 md:px-24 lg:px-40 rounded-2xl`}
             >
               {title}
             </button>
@@ -105,7 +105,7 @@ const WorkshopSection = () => {
    * when clicked again, it will set the active state to false
    */
   const transaction = (cardIndex) => {
-    console.log(`Set card index to ${cardIndex}`);
+    // console.log(`Set card index to ${cardIndex}`);
     setAllInactive();
 
     switch (cardIndex) {
@@ -134,6 +134,7 @@ const WorkshopSection = () => {
         color="red-grad"
         subtitle={Data.web.subtitle}
         desc={Data.web.body}
+        cLink={Data.web.calendar}
         title={Data.web.title}
         key="1"
         isActive={component1Active}
@@ -148,6 +149,7 @@ const WorkshopSection = () => {
         color="blue-grad"
         subtitle={Data.app.subtitle}
         desc={Data.app.body}
+        cLink={Data.app.calendar}
         title={Data.app.title}
         key="2"
         isActive={component2Active}
@@ -162,6 +164,7 @@ const WorkshopSection = () => {
         color="yellow-grad"
         subtitle={Data.research.subtitle}
         desc={Data.research.body}
+        cLink={Data.research.calendar}
         title={Data.research.title}
         key="3"
         isActive={component3Active}
@@ -176,6 +179,7 @@ const WorkshopSection = () => {
         color="green-grad"
         subtitle={Data.design.subtitle}
         desc={Data.design.body}
+        cLink={Data.design.calendar}
         title={Data.design.title}
         key="4"
         isActive={component4Active}
@@ -193,8 +197,8 @@ const WorkshopSection = () => {
           <div className="text-5xl mt-24 text-custom text-center font-600 pb-16">
             Offered Workshops
           </div>
-          <div className="flex px-24 flex-wrap">
-            <div className="mr-8 mb-8" onClick={() => transaction(1)}>
+          <div className="flex px-16 justify-center items-center flex-wrap">
+            <div className="mr-8 mb-8 " onClick={() => transaction(1)}>
               <WorkshopComponent
                 title="Web Dev 101"
                 subtitle="Create a Personal Portfolio using React"
@@ -254,7 +258,7 @@ const WorkshopSection = () => {
             ) : null}
           </div>
           <div>
-            <div className="flex justify-between px-28">
+            <div className="flex justify-between sm:px-8 xs:px-4 md:px-16 lg:px-20 xl:px-28">
               {!component1Active ? (
                 <div onClick={() => transaction(1)}>
                   <WebCard />
