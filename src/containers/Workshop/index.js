@@ -275,7 +275,7 @@ const WorkshopSection = () => {
                   <ResearchCard />
                 </div>
               ) : null}
-              
+
               {!component4Active ? (
                 <div onClick={() => transaction(4)}>
                   <DesignCard />
