@@ -59,6 +59,7 @@ const Landing = () => {
       if (success) {
         showToast({ title: res.data.msg, bgColor: "green", textColor: "#fff" });
         localStorage.setItem("tk", true);
+        setRegistered(true);
       } else {
         showToast({ title: res.data.msg, bgColor: "red", textColor: "#fff" });
       }
@@ -96,22 +97,28 @@ const Landing = () => {
               />
             </div>
             {registered ? (
-              <button
-                type="button"
-                className="mt-3 md:mt-0 font-500 bg-yellow-grad text-white h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
-                // className="w-40 h-10 md:w-64 md:h-16 bg-yellow-grad rounded-md md:rounded-xl text-white"
+              <a
+                href="https://calendar.google.com/calendar/u/5?cid=Z3E0NGZqZjJhOHN0ZzVrcTFkYmlmOWhsOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+                target="_blank"
+                rel="noreferrer"
               >
-                <div className="flex">
-                  <img
-                    className="w-3 md:w-6"
-                    src={CalendarLogo}
-                    alt="Calendar"
-                  />
-                  <span className="pl-2 md:pl-4 text-xs md:text-xl font-500">
-                    Add to calendar
-                  </span>
-                </div>
-              </button>
+                <button
+                  type="button"
+                  className="mt-3 md:mt-0 font-500 bg-yellow-grad text-white h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
+                  // className="w-40 h-10 md:w-64 md:h-16 bg-yellow-grad rounded-md md:rounded-xl text-white"
+                >
+                  <div className="flex">
+                    <img
+                      className="w-3 md:w-6"
+                      src={CalendarLogo}
+                      alt="Calendar"
+                    />
+                    <span className="pl-2 md:pl-4 text-xs md:text-xl font-500">
+                      Add to calendar
+                    </span>
+                  </div>
+                </button>
+              </a>
             ) : (
               <button
                 className="mt-3 md:mt-0 xs:w-40 font-500 bg-yellow-grad text-white md:w-36 h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
