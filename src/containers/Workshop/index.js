@@ -24,7 +24,7 @@ const WorkshopCard = ({
         <div>
           {/** this is the card in expanded form -> visible when clicked */}
           <div className="px-6 items-center py-12">
-            <div className="text-2xl md:text-5xl  mt-8 text-custom text-left md:text-center font-600 pb-16">
+            <div className="text-2xl sm:text-5xl  mt-8 text-custom text-left sm:text-center font-600 pb-16">
               Offered Workshops
             </div>
             <div
@@ -198,7 +198,7 @@ const WorkshopSection = () => {
       {isAllInactive() ? (
         <div className="">
           {}
-          <div className="text-2xl md:text-5xl px-6 mt-24 text-custom text-left md:text-center font-600 pb-16">
+          <div className="text-2xl sm:text-5xl px-6 mt-24 text-custom text-left sm:text-center font-600 pb-16">
             Offered Workshops
           </div>
           <div className="flex px-6 sm:px-16 justify-center xl:justify-around items-center flex-wrap">

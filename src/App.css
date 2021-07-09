@@ -18,6 +18,18 @@ body {
   visibility: hidden;
 }
 
+.border-blue-500 {
+  border-color: rgb(59, 130, 246);
+}
+
+.border-red-500 {
+  border-color: rgb(239, 68, 68);
+}
+
+.border-green-500 {
+  border-color: rgb(16, 185, 129);
+}
+
 @media only screen and (max-width: 1391px) {
   .workshop-card-margin {
     margin-right: 0;

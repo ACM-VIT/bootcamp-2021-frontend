@@ -1,0 +1,91 @@
+/* Style the accordion section */
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
+  border: none;
+  outline: none !important;
+  border-radius: 12px;
+  @apply w-10/12 lg:w-6/12 mb-6;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  /* background-color: #1f1f1f; */
+  /* background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%); */
+  border-radius: 4px 4px;
+  /* color: #444; */
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Style the accordion content title */
+.accordion__title {
+  font-weight: 500;
+  font-family: "Poppins";
+  @apply text-base md:text-lg pr-2;
+  text-align: left;
+  color: #ffffff;
+  /* opacity: 0.5; */
+}
+
+.accordion:hover,
+.active {
+  /* color: #ffffff !important;
+  opacity: 1; */
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  transform: rotate(90deg);
+  width: 18px;
+  height: 14px;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(-90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  background-color: white;
+  overflow: auto;
+  transition: max-height 0.3s ease;
+  border-radius: 0px 0px 12px 12px !important;
+  border: 1px solid #ffac53;
+  border-top: none;
+}
+
+.displayBorder {
+  background-color: white;
+  overflow: auto;
+  transition: max-height 0.3s ease;
+  border-radius: 0px 0px 12px 12px !important;
+  border: 1px solid #ffac53;
+  border-top: none;
+  border-bottom: none;
+}
+
+.accordion__content::-webkit-scrollbar {
+  display: none;
+}
+/* Style the accordion content text */
+.accordion__text {
+  font-weight: 500;
+  font-family: "Poppins";
+  padding: 16px 16px 16px 16px;
+  color: #333333;
+  line-height: 25px;
+  font-size: 15px;
+  border-radius: 12px 12px;
+}
