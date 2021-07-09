@@ -112,7 +112,7 @@ const WorkshopSection = () => {
           <div onClick={() => transaction(1)}>
             <WorkshopCard
               color="red"
-              subtitle={`active state => ${component1Active}`}
+              subtitle=""
               title="web"
               key="1"
               isActive={component1Active}
@@ -121,7 +121,7 @@ const WorkshopSection = () => {
           <div onClick={() => transaction(2)}>
             <WorkshopCard
               color="green"
-              subtitle={`active state => ${component2Active}`}
+              subtitle=""
               title="app"
               key="2"
               isActive={component2Active}
@@ -130,7 +130,7 @@ const WorkshopSection = () => {
           <div onClick={() => transaction(3)}>
             <WorkshopCard
               color="blue"
-              subtitle={`active state => ${component3Active}`}
+              subtitle=""
               title="ml - ai"
               key="3"
               isActive={component3Active}
@@ -139,7 +139,7 @@ const WorkshopSection = () => {
           <div onClick={() => transaction(4)}>
             <WorkshopCard
               color="yellow"
-              subtitle={`active state => ${component4Active}`}
+              subtitle=""
               title="design"
               key="4"
               isActive={component4Active}
