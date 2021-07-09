@@ -4,13 +4,13 @@ import Shade from "../../images/shade2.svg";
 import Logo from "../../images/perklogo.svg";
 
 const Perks = () => (
-  <div className="relative mt-32 text-left pb-56 overflow-hidden">
-    <h1 className="lg:text-right font-poppins font-bold mt-32 pl-8 lg:pr-28 md:pl-32 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight overflow-hidden">
+  <div className="relative mt-32 text-left pb-56 overflow-hidden -z-10">
+    <h1 className="lg:text-right font-poppins font-bold mt-32 pl-8 lg:pr-28 md:pl-24 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight overflow-hidden -z-10">
       Perks and Benefits
     </h1>
 
     <div className="text-left md:flex-col -mt-4 lg:mt-6">
-      <div className="flex lg:flex-row-reverse mt-16 ml-8 md:ml-32">
+      <div className="flex lg:flex-row-reverse mt-16 ml-8 md:pl-16">
         <img
           className="h-2.5 w-2.5 sm:h-auto sm:w-auto mt-2 mr-28 xs:mr-28"
           src={Dot}
@@ -21,7 +21,7 @@ const Perks = () => (
         </p>
       </div>
 
-      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:ml-32">
+      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:pl-16">
         <img
           className="h-2.5 w-2.5 sm:h-auto sm:w-auto mt-2 mr-28 xs:mr-28"
           src={Dot}
@@ -32,7 +32,7 @@ const Perks = () => (
         </p>
       </div>
 
-      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:ml-32">
+      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:pl-16">
         <img
           className="h-2.5 w-2.5 sm:h-auto sm:w-auto mt-2 mr-28 xs:mr-28"
           src={Dot}
@@ -43,7 +43,7 @@ const Perks = () => (
         </p>
       </div>
 
-      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:ml-32">
+      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:pl-16">
         <img
           className="h-2.5 w-2.5 sm:h-auto sm:w-auto mt-2 mr-28 xs:mr-28"
           src={Dot}
@@ -54,7 +54,7 @@ const Perks = () => (
         </p>
       </div>
 
-      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:ml-32">
+      <div className="flex lg:flex-row-reverse mt-8 ml-8 md:pl-16">
         <img
           className="h-2.5 w-2.5 sm:h-auto sm:w-auto mt-2 mr-28 xs:mr-28"
           src={Dot}

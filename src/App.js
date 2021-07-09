@@ -16,6 +16,7 @@ function App() {
       <Navbar />
       <Landing />
       <About />
+      <div id="workshops" />
       <WorkshopSection />
       <Features />
       <Perks />

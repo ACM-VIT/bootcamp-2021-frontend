@@ -109,7 +109,7 @@ const Landing = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://discord.com/"
+            href="https://discord.gg/gBxsGyEp"
           >
             <img
               className="cursor-pointer"
@@ -117,16 +117,6 @@ const Landing = () => {
               alt="Discord"
             />
           </a>
-          {/* <a href="https://discord.com/"> */}
-          {/* <a
-            href="https://discord.com/"
-            className="bg-discord text-white py-3 px-3 w-48 rounded-full focus:outline-none focus:shadow-outline"
-            type="button"
-          >
-            <img className="h-6 w-6 absolute" src={DiscordLogo} alt="Discord" />
-            <span className="ml-9 text-md">Join our Discord</span>
-          </a> */}
-          {/* </a> */}
         </div>
       </section>
     </>
