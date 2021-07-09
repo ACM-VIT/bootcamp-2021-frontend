@@ -1,4 +1,5 @@
 import React from "react";
+import ToastProvider from "react-toaster-minimal";
 import About from "./containers/About/about";
 import Features from "./containers/Features/features";
 import Perks from "./containers/Perks/perks";
@@ -13,15 +14,17 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Landing />
-      <About />
-      <div id="workshops" />
-      <WorkshopSection />
-      <Features />
-      <Perks />
-      <Accordion />
-      <Footer />
+      <ToastProvider>
+        <Navbar />
+        <Landing />
+        <About />
+        <div id="workshops" />
+        <WorkshopSection />
+        <Features />
+        <Perks />
+        <Accordion />
+        <Footer />
+      </ToastProvider>
     </div>
   );
 }

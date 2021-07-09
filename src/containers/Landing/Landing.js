@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import axios from "axios";
 import qs from "qs";
+import { showToast } from "react-toaster-minimal";
 
 import CountDown from "../../components/CountDown/CountDown";
 import LandingLogo from "../../images/Landing.svg";
@@ -20,12 +21,20 @@ const Landing = () => {
       : currentDate.getFullYear();
 
   // store user email on change
-  const [email, setEmail] = useState(null);
+  const [email, setEmail] = useState("");
 
   const addUserToList = () => {
-    return axios({
+    if (email.length === 0) {
+      showToast({
+        title: "please enter an email",
+        bgColor: "red",
+        textColor: "#fff",
+      });
+      return;
+    }
+    axios({
       method: "post",
-      url: `http://localhost:4000/rsvp`,
+      url: `https://email.acmvit.in/rsvp`,
       data: qs.stringify({
         email,
         captcha: window.sessionStorage.getItem("token"),
@@ -37,7 +46,11 @@ const Landing = () => {
       const {
         data: { success },
       } = res;
-
+      if (success) {
+        showToast({ title: res.data.msg, bgColor: "green", textColor: "#fff" });
+      } else {
+        showToast({ title: res.data.msg, bgColor: "red", textColor: "#fff" });
+      }
       // const {success} = res.success;
     });
   };
@@ -99,11 +112,11 @@ const Landing = () => {
           />
         </div>
         <div className="md:hidden">
-          <a href="https://discord.com/">
+          <a href="https://discord.gg/gBxsGyEp">
             <img
               className="fixed h-24 top-112 right-0"
               src={DiscordMobile}
-              alt=""
+              alt="discord"
             />
           </a>
         </div>
