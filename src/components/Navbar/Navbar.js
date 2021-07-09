@@ -14,22 +14,39 @@ const Navbar = () => {
           <img src={Logo} alt="logo" />
         </Link>
 
-        {/* Hamberger Icon */}
-        {/* <div className="visible mr-6 md:hidden">
-          <img src={Hamburger} alt="Ham" />
-        </div> */}
         <div className="md:hidden fixed top-8 right-4">
           <Dropdown />
         </div>
 
-        <div className="mr-20 md:block hidden">
-          <a href="#workshops" className="font-500 mr-12 text-xl text-custom">
+        <div className="mr-20 md:flex md:mr-8 hidden">
+          <a
+            href="#about"
+            className="font-500 lg:mr-12 mr-6 text-xl text-custom"
+          >
+            About
+          </a>
+          <a
+            href="#workshops"
+            className="font-500 lg:mr-12 mr-6 text-xl text-custom"
+          >
             Workshops
           </a>
-          <a href="#features" className="font-500 mr-12 text-xl text-custom">
+          <a
+            href="#features"
+            className="font-500 lg:mr-12 mr-6 text-xl text-custom"
+          >
             Features
           </a>
-          <a href="#faqs" className="font-500 mr-12 text-xl text-custom">
+          <a
+            href="#perks"
+            className="font-500 lg:mr-12 mr-6 text-xl text-custom"
+          >
+            Perks
+          </a>
+          <a
+            href="#faqs"
+            className="font-500 lg:mr-12 mr-6 text-xl text-custom"
+          >
             FAQs
           </a>
         </div>

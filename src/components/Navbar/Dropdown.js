@@ -43,7 +43,13 @@ function Nav() {
               <img src={Cross} alt="cross" />
             </button>
             <div ref={ref} className="space-y-1 w-full mr-12 flex flex-col">
-              <div className="mb-3 mt-10">
+              <div className="mb-3 mt-8">
+                <a href="#about" className="font-500 text-custom px-3">
+                  About
+                </a>
+              </div>
+
+              <div style={{ marginBottom: "12px" }}>
                 <a href="#workshops" className="font-500 text-custom px-3">
                   Workshops
                 </a>
@@ -55,7 +61,13 @@ function Nav() {
                 </a>
               </div>
 
-              <div style={{ marginBottom: "28px" }}>
+              <div style={{ marginBottom: "12px" }}>
+                <a href="#perks" className="font-500 text-custom px-3">
+                  Perks
+                </a>
+              </div>
+
+              <div style={{ marginBottom: "24px" }}>
                 <a href="#faqs" className="font-500 text-custom px-3">
                   FAQs
                 </a>

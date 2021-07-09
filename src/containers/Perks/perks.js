@@ -4,7 +4,10 @@ import Shade from "../../images/shade2.svg";
 import Logo from "../../images/perklogo.svg";
 
 const Perks = () => (
-  <div className="relative mt-32 text-left pb-56 overflow-hidden -z-10">
+  <div
+    id="perks"
+    className="relative mt-32 text-left pb-56 overflow-hidden -z-10"
+  >
     <h1 className="lg:text-right font-poppins font-bold mt-32 pl-8 lg:pr-28 md:pl-24 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight overflow-hidden -z-10">
       Perks and Benefits
     </h1>

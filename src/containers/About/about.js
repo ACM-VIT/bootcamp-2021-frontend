@@ -2,7 +2,7 @@ import React from "react";
 
 /* Responsive About Page */
 const About = () => (
-  <div>
+  <div id="about">
     <h1 className="flex text-left pl-6 sm:justify-center xs:mr-10 font-poppins font-bold mt-20 sm:mt-32 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
       About Bootcamp
     </h1>
