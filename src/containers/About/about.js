@@ -7,7 +7,7 @@ const About = () => (
       About Bootcamp
     </h1>
 
-    <p className="text-left sm:justify-center sm:text-center font-poppins font-semibold px-6 sm:mx-16 lg:mx-32 mt-10 sm:mt-12 lg:mt-20 text-base sm:text-lg md:text-xl text-black">
+    <p className="text-left sm:justify-center sm:text-center font-600 px-6 sm:mx-16 lg:mx-32 mt-10 sm:mt-12 lg:mt-20 text-base sm:text-lg md:text-xl text-black">
       ACM Summer Bootcamp is an all-immersive Bootcamp for novices and pros
       alike. We aim to provide you with a hands-on learning experience through
       our accomplished student mentors. Through
@@ -19,12 +19,12 @@ const About = () => (
       Web Development, App Development, Machine Learning and Design
     </h2>
 
-    <p className="flex text-left sm:justify-center sm:text-center font-poppins font-semibold px-6 sm:mx-16 lg:mx-32 mt-8 sm:mt-12 text-base sm:text-lg md:text-xl text-black">
+    <p className="flex text-left sm:justify-center sm:text-center font-600 px-6 sm:mx-16 lg:mx-32 mt-8 sm:mt-12 text-base sm:text-lg md:text-xl text-black">
       Within two weeks, you will have gained diverse technical knowledge and
       also have incredible projects under your belt.
     </p>
 
-    <p className="text-left sm:justify-center sm:text-center font-poppins font-semibold px-6 sm:mx-16 lg:mx-40 mt-8 mb-10 text-base sm:text-lg md:text-xl text-black">
+    <p className="text-left sm:justify-center sm:text-center font-600 px-6 sm:mx-16 lg:mx-40 mt-8 mb-10 text-base sm:text-lg md:text-xl text-black">
       Not to forget, we will provide
       <span className="text-yellow-500"> certificates</span> upon successful
       completion of the Bootcamp and give personal

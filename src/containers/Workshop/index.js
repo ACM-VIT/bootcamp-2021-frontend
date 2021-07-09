@@ -44,13 +44,13 @@ const WorkshopCard = ({
                       <button
                         className={`w-40 h-10 md:w-64 md:h-16 bg-${color} rounded-md md:rounded-xl text-white`}
                       >
-                        <div className="flex pl-4">
+                        <div className="flex md:pl-8 pl-5">
                           <img
-                            className="w-4"
+                            className="w-3 md:w-6"
                             src={CalendarLogo}
                             alt="Calendar"
                           />
-                          <span className="ml-2 md:ml-4 text-xs md:text-xl font-500">
+                          <span className="pl-2 md:pl-4 text-xs md:text-xl font-500">
                             Add to calendar
                           </span>
                         </div>
