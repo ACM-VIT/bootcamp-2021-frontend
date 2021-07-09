@@ -67,7 +67,7 @@ const WorkshopCard = ({
           <div className="">
             {/** this is the card in collapsed form -> visible when something else is clicked */}
             <button
-              className={`bg-${color} text-white mb-2 hover:shadow-xl text-lg md:text-2xl flex justify-center items-center sm:h-12 md:w-56 md:h-16 lg:h-20 lg:w-80 xl:w-96 xl:h-20 py-7 px-12 h-4 workshop-card-button workshop-card-button-4 workshop-card-button-2 sm:w-36 lg:px-40 rounded-2xl`}
+              className={`bg-${color} text-white mb-2 hover:shadow-xl text-lg md:text-2xl flex justify-center items-center sm:h-12 md:w-56 md:h-16 lg:h-20 lg:w-80 xl:w-96 xl:h-20 py-7 px-12 h-4 workshop-card-button sm:w-36 lg:px-40 rounded-2xl`}
             >
               {title}
             </button>

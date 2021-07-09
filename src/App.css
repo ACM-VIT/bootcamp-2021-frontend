@@ -18,16 +18,24 @@ body {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 640px) {
-  .workshop-card {
-    width: 475px;
+@media only screen and (max-width: 1391px) {
+  .workshop-card-margin {
+    margin-right: 0;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .workshop-card-2 {
-    width: 300px;
-    font-size: 20px;
+@media only screen and (max-width: 640px) {
+  .workshop-card {
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .workshop-card-button {
+    width: 115px;
+  }
+  .workshop-card {
+    width: 440px;
   }
 }
 
@@ -38,20 +46,28 @@ body {
   }
 }
 
-@media only screen and (max-width: 530px) {
-  .workshop-card-button {
-    width: 115px;
+@media only screen and (max-width: 460px) {
+  .workshop-card {
+    width: 380px;
   }
-}
-
-@media only screen and (max-width: 300px) {
-  .workshop-card-button {
-    width: 75px;
-    font-size: 20px !important;
+  .workshop-card-title {
+    font-size: 20px;
+  }
+  .workshop-card-subtitle {
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .workshop-card {
+    width: 370px;
+  }
+  .workshop-card-title {
+    font-size: 20px;
+  }
+  .workshop-card-subtitle {
+    font-size: 16px;
+  }
   .workshop-card-button {
     width: 75px;
     font-size: 14px !important;
@@ -59,9 +75,21 @@ body {
     padding-right: 2.5rem !important;
   }
 }
+@media only screen and (max-width: 375px) {
+  .workshop-card {
+    width: 310px;
+  }
+  .workshop-card-title {
+    font-size: 20px;
+  }
+  .workshop-card-subtitle {
+    font-size: 16px;
+  }
+}
 
-@media only screen and (max-width: 1391px) {
-  .workshop-card-margin {
-    margin-right: 0;
+@media only screen and (max-width: 300px) {
+  .workshop-card-button {
+    width: 75px;
+    font-size: 20px !important;
   }
 }
