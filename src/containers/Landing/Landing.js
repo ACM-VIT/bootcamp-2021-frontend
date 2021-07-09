@@ -58,6 +58,7 @@ const Landing = () => {
       } = res;
       if (success) {
         showToast({ title: res.data.msg, bgColor: "green", textColor: "#fff" });
+        setEmail("");
         localStorage.setItem("tk", true);
         setRegistered(true);
       } else {
@@ -86,16 +87,18 @@ const Landing = () => {
             </span>
           </div>
           <div className="mt-12 flex flex-col md:flex-row">
-            <div className="w-full xs:w-72 h-12 bg-yellow-grad rounded-xl">
-              <input
-                className="font-500 appearance-none rounded-xl border-2 border-yellow-200 text-md w-full sm:w-72 h-12 py-2 px-6 mr-2 leading-tight placeholder-yellow-400 focus:outline-none focus:shadow-outline"
-                id="email"
-                type="email"
-                placeholder="Enter your email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
-            </div>
+            {!registered && (
+              <div className="w-full xs:w-72 h-12 bg-yellow-grad rounded-xl">
+                <input
+                  className="font-500 appearance-none rounded-xl border-2 border-yellow-200 text-md w-full sm:w-72 h-12 py-2 px-6 mr-2 leading-tight placeholder-yellow-400 focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                />
+              </div>
+            )}
             {registered ? (
               <a
                 href="https://calendar.google.com/calendar/u/5?cid=Z3E0NGZqZjJhOHN0ZzVrcTFkYmlmOWhsOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
@@ -104,7 +107,7 @@ const Landing = () => {
               >
                 <button
                   type="button"
-                  className="mt-3 md:mt-0 font-500 bg-yellow-grad text-white h-12 py-2 md:px-4 md:ml-2 rounded-xl focus:outline-none focus:shadow-outline"
+                  className="flex justify-center items-center w-40 md:w-auto mt-3 md:mt-0 font-500 bg-yellow-grad text-white h-12 py-2 md:px-4 rounded-xl focus:outline-none focus:shadow-outline"
                   // className="w-40 h-10 md:w-64 md:h-16 bg-yellow-grad rounded-md md:rounded-xl text-white"
                 >
                   <div className="flex">
