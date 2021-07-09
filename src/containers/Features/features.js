@@ -16,7 +16,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:mt-2 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
+      <p className="font-500 text-custom -mt-2 xs:-mt-2 sm:mt-2 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl -z-10">
         Two-week long Bootcamp covering 4 domains
       </p>
     </div>
@@ -27,7 +27,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
+      <p className="font-500 text-custom -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl -z-10">
         Interactive code-along sessions
       </p>
     </div>
@@ -38,7 +38,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
+      <p className="font-500 text-custom -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl -z-10">
         Access to domain-specific resources
       </p>
     </div>
@@ -49,7 +49,7 @@ const Features = () => (
         src={Dot}
         alt="dot"
       />
-      <p className="font-poppins font-semibold -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl text-black -z-10">
+      <p className="font-500 text-custom -mt-2 xs:-mt-2 sm:-mt-1 ml-3 xs:ml-4 sm:ml-8 text-lg sm:text-xl md:text-2xl -z-10">
         Test your skills with exciting challenges
       </p>
     </div>

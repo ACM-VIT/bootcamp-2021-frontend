@@ -20,9 +20,9 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 12px 12px 12px 12px;
   cursor: pointer;
   span {
     margin-right: 1.5rem;
@@ -37,7 +37,7 @@ const Dropdown = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   border: 2px solid #f0b051;
   border-top: none;
@@ -69,7 +69,7 @@ const Accordion = () => {
             <>
               <Wrap
                 className="mx-6"
-                round={clicked === index ? "0" : "20px"}
+                round={clicked === index ? "0" : "12px"}
                 onClick={() => toggle(index)}
                 key={Data.index}
               >
@@ -88,7 +88,7 @@ const Accordion = () => {
               {clicked === index ? (
                 <div>
                   <Dropdown className="mx-6">
-                    <p className="text-md sm:text-xl">{item.answer}</p>
+                    <p className="text-md px-4 sm:text-xl">{item.answer}</p>
                   </Dropdown>
                 </div>
               ) : null}

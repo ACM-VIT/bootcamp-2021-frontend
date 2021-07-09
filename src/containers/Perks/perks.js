@@ -16,7 +16,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
+        <p className="font-500 text-custom -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl -z-10">
           Build a diverse portfolio
         </p>
       </div>
@@ -27,7 +27,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
+        <p className="font-500 text-custom -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl -z-10">
           Gain industry-relevant skills
         </p>
       </div>
@@ -38,7 +38,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
+        <p className="font-500 text-custom -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl -z-10">
           Mentorship by experienced devs
         </p>
       </div>
@@ -49,7 +49,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
+        <p className="font-500 text-custom -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl -z-10">
           Certificates upon completion
         </p>
       </div>
@@ -60,7 +60,7 @@ const Perks = () => (
           src={Dot}
           alt="dot"
         />
-        <p className="font-poppins font-semibold -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl text-black -z-10">
+        <p className="font-500 text-custom -ml-24 mr-4 sm:mt-1 text-lg sm:text-xl md:text-2xl -z-10">
           Shout-outs on our Instagram handle
         </p>
       </div>
