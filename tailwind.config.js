@@ -42,6 +42,9 @@ module.exports = {
         center: true,
         padding: "2rem",
       },
+      spacing: {
+        112: "28rem",
+      },
     },
   },
   variants: {
