@@ -28,11 +28,11 @@ module.exports = {
         112: "28rem",
       },
       screens: {
-        xs: "375px",
+        xs: "315px",
         sm: "640px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",
+        xl: "1247px",
       },
       fontSize: {
         "landing-large": ["4.4rem", "4.5rem"],

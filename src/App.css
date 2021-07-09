@@ -13,3 +13,51 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 640px) {
+  .workshop-card {
+    width: 475px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .workshop-card-2 {
+    width: 300px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .workshop-card-font {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .workshop-card-button {
+    width: 115px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .workshop-card-button {
+    width: 75px;
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .workshop-card-button {
+    width: 75px;
+    font-size: 14px !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 1391px) {
+  .workshop-card-margin {
+    margin-right: 0;
+  }
+}
