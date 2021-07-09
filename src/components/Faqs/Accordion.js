@@ -58,10 +58,10 @@ const Accordion = () => {
   return (
     <AccordionSection
       id="faqs"
-      className="justify-left md:justify-center w-full mb-24"
+      className="justify-left md:justify-center w-full mb-112 sm:mb-40 md:mb-52"
     >
       <Container className="w-full md:w-9/12 mx-6">
-        <div className="pl-7 sm:pl-0 text-3xl sm:text-4xl md:text-5xl pl-6 sm:text-center mb-8 md:mb-24 mt-20 text-custom font-600">
+        <div className="pl-7 sm:pl-0 text-3xl sm:text-4xl md:text-5xl pl-6 sm:text-center mb-8 md:mb-16 mt-20 text-custom font-600">
           FAQS
         </div>
         {Data.map((item, index) => {
