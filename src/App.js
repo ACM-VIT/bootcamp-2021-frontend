@@ -6,7 +6,6 @@ import Perks from "./containers/Perks/perks";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./containers/Landing/Landing";
 import FaqSection from "./components/Faqs/FaqSection";
-import Accordion from "./components/Faqs/Accordion";
 import Footer from "./components/Footer/Footer";
 import WorkshopSection from "./containers/Workshop";
 
