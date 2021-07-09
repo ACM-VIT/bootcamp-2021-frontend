@@ -17,6 +17,7 @@ const WorkshopCard = ({
   bColor,
   isActive,
 }) => {
+  // console.log(`$${title} active > ${isActive}`);
   return (
     <div>
       {isActive ? (

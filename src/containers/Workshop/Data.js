@@ -6,7 +6,8 @@ export default {
     Gear up this summer to build your perfect portfolio using React. 
     Forget those traditional resumes and build a portfolio to show your work. It's practical, relevant and serves as the perfect resume! We bring to you an all-inclusive code-along to get you started. The workshop will be a comprehensive guide on how to create a client-side rendering website with React to showcase your skills and projects and will also delve into scrolling and timeline animations using GSAP.
         `,
-    calendar: "",
+    calendar:
+      "https://calendar.google.com/calendar/u/5?cid=Z3E0NGZqZjJhOHN0ZzVrcTFkYmlmOWhsOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   },
   app: {
     title: "App",
@@ -14,7 +15,8 @@ export default {
     body: `
     Build a Flutter App that will help you shorten URLs/links instantly that you can share with your friends! A complete beginner-friendly course where you will learn to build a Flutter app from scratch, understand how to place UI components efficiently and also integrate API calls.
         `,
-    calendar: "",
+    calendar:
+      "https://calendar.google.com/calendar/u/5?cid=Z3E0NGZqZjJhOHN0ZzVrcTFkYmlmOWhsOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   },
   research: {
     title: "Research",
@@ -24,7 +26,8 @@ export default {
     
     Well, now we make it a reality. In this workshop, you will learn to build a virtual mouse that controls the on-screen mouse pointer. Basic controls such as clicking, tracking, volume control etc will be taught.
         `,
-    calendar: "",
+    calendar:
+      "https://calendar.google.com/calendar/u/5?cid=Z3E0NGZqZjJhOHN0ZzVrcTFkYmlmOWhsOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   },
   design: {
     title: "Design",
@@ -32,6 +35,7 @@ export default {
     body: `
     Ever wondered how user interfaces are created? We have got you covered! We aim to introduce you to the world of design and all its subtleties. Learn how to design in a way that enhances user experience and boosts customer satisfaction. We teach you fundamental design principles & techniques to get you started. Our interactive session will help you explore Figma and get comfortable with basic design tools. In the end, you’ll be equipped to dissect problem statements and design your very own prototype.
         `,
-    calendar: "",
+    calendar:
+      "https://calendar.google.com/calendar/u/5?cid=Z3E0NGZqZjJhOHN0ZzVrcTFkYmlmOWhsOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   },
 };
