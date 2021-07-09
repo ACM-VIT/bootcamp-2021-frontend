@@ -13,24 +13,50 @@ const Footer = () => {
     <>
       <footer className="invisible md:visible md:flex justify-between h-24 px-24 bg-black items-center">
         <div>
-          <a href="https://acmvit.in/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://acmvit.in/"
+          >
             <img src={acmLogo} alt="ACM-Logo" />
           </a>
         </div>
         <div className="flex">
-          <a href="https://www.facebook.com/acmvitvellore/" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/acmvitvellore/"
+            className="mr-2"
+          >
             <img src={Fb} alt="FB" />
           </a>
-          <a href="https://twitter.com/ACM_VIT" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ACM_VIT"
+            className="mr-2"
+          >
             <img src={Twitter} alt="Twitter" />
           </a>
-          <a href="https://instagram.com/acmvit" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/acmvit"
+            className="mr-2"
+          >
             <img src={Instagram} alt="Instagram" />
           </a>
-          <a href="https://medium.com/acmvit" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://medium.com/acmvit"
+            className="mr-2"
+          >
             <img src={Medium} alt="Medium" />
           </a>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/company/acm-vit-chapter/mycompany/"
             className="mr-2"
           >
@@ -38,7 +64,11 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <a href="https://vit.ac.in/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://vit.ac.in/"
+          >
             <img src={vitLogo} alt="VIT-Logo" />
           </a>
         </div>
@@ -48,16 +78,36 @@ const Footer = () => {
 
       <footer className="sm:flex-col justify-between h-32 px-12 bg-black items-center md:hidden">
         <div className="flex justify-center py-4">
-          <a href="https://www.facebook.com/acmvitvellore/" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/acmvitvellore/"
+            className="mr-2"
+          >
             <img src={Fb} alt="FB" />
           </a>
-          <a href="https://twitter.com/ACM_VIT" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ACM_VIT"
+            className="mr-2"
+          >
             <img src={Twitter} alt="Twitter" />
           </a>
-          <a href="https://instagram.com/acmvit" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/acmvit"
+            className="mr-2"
+          >
             <img src={Instagram} alt="Instagram" />
           </a>
-          <a href="https://medium.com/acmvit" className="mr-2">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://medium.com/acmvit"
+            className="mr-2"
+          >
             <img src={Medium} alt="Medium" />
           </a>
           <a
@@ -69,12 +119,20 @@ const Footer = () => {
         </div>
         <div className="flex justify-between">
           <div>
-            <a href="https://acmvit.in/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://acmvit.in/"
+            >
               <img src={acmLogo} alt="ACM-Logo" />
             </a>
           </div>
           <div>
-            <a href="https://vit.ac.in/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://vit.ac.in/"
+            >
               <img src={vitLogo} alt="VIT-Logo" />
             </a>
           </div>
