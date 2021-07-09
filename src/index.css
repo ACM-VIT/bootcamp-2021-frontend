@@ -5,6 +5,15 @@
 .bg-yellow-grad {
   background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
 }
+.bg-red-grad {
+  background: linear-gradient(134.32deg, #ff7562 0%, #ff3b3b 100%);
+}
+.bg-blue-grad {
+  background: linear-gradient(134.32deg, #62d0ff 0%, #3ba1ff 100%);
+}
+.bg-green-grad {
+  background: linear-gradient(98.79deg, #37d178 0%, #2ab564 99.55%);
+}
 
 .text-yellow-grad {
   background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%);
