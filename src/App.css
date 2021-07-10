@@ -30,6 +30,14 @@ body {
   border-color: rgb(16, 185, 129);
 }
 
+.mobile-menu-hidden {
+  display: none;
+}
+
+/* #mobile-menu {
+  transition: all ease-in-out 2s;
+} */
+
 @media only screen and (max-width: 1391px) {
   .workshop-card-margin {
     margin-right: 0;

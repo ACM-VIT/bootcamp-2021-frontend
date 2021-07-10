@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Transition } from "@headlessui/react";
 
 import Hamburger from "../../images/Hamburger.svg";
@@ -7,6 +7,7 @@ import Cross from "../../images/cross.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const menu = useRef(null);
   return (
     <div>
       <div className="flex md:hidden">
@@ -32,13 +33,18 @@ function Nav() {
       >
         {(ref) => (
           <div
+            ref={menu}
             className="md:hidden border relative bg-white border-yellow-500 rounded-xl z-50"
             id="mobile-menu"
           >
             <button
               className="absolute right-2 top-2"
               type="button"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => {
+                menu.current.classList.add("mobile-menu-hidden");
+                setIsOpen(!isOpen);
+              }}
+              // onClick={() => setIsOpen(!isOpen)}
             >
               <img src={Cross} alt="cross" />
             </button>
