@@ -3,7 +3,7 @@ import React from "react";
 import ArrorLogo from "../../images/Arrow-right.svg";
 const workshopComponent = ({ title, subtitle, color }) => {
   return (
-    <div>
+    <div style={{cursor: "pointer"}}>
       <div
         className={`px-4 -z-20 relative w-152 md:w-140 workshop-card rounded-2xl ${color}`}
       >
