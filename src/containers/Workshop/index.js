@@ -228,8 +228,7 @@ const WorkshopSection = () => {
             >
               <WorkshopComponent
                 title="ML 101"
-                subtitle="Gesture Control Your Screen using Python!
-              Build a Gesture Recognition System with Python!"
+                subtitle="Gesture Control Your Screen using Python!"
                 color="bg-yellow-grad"
               />
             </div>
