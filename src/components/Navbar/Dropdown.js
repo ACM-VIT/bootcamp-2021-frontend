@@ -12,7 +12,11 @@ function Nav() {
     <div>
       <div className="flex md:hidden">
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => {
+            setTimeout(() => {
+              setIsOpen(!isOpen);
+            }, 100);
+          }}
           type="button"
           className="p-2"
           aria-controls="mobile-menu"
@@ -22,15 +26,7 @@ function Nav() {
         </button>
       </div>
 
-      <Transition
-        show={isOpen}
-        enter="transition ease-out duration-100 transform"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="transition ease-in duration-75 transform"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-      >
+      <Transition show={isOpen}>
         {(ref) => (
           <div
             ref={menu}
