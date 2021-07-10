@@ -6,7 +6,7 @@ import Shade from "../../images/shade.svg";
 /* Responsive Feature Page */
 const Features = () => (
   <div className="relative md:ml-16 pt-4 -z-10" id="features">
-    <h1 className="flex left-0 font-poppins font-bold mt-32 md:mt-44 ml-8 xs:ml-8 sm:ml-16 md:ml-24 text-3xl sm:text-4xl md:text-5xl text-gray-900 text-opacity-90 tracking-tight">
+    <h1 className="flex left-0 font-600 text-custom mt-32 md:mt-44 ml-8 xs:ml-8 sm:ml-16 md:ml-24 text-3xl sm:text-4xl md:text-5xl text-opacity-90 tracking-tight">
       Features
     </h1>
 

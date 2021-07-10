@@ -6,15 +6,12 @@
   border: none;
   outline: none !important;
   border-radius: 12px;
-  @apply w-10/12 lg:w-6/12 mb-6;
+  @apply w-11/12 lg:w-6/12 mb-6;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  /* background-color: #1f1f1f; */
-  /* background: linear-gradient(135deg, #ffc963 0%, #ffac53 100%); */
   border-radius: 4px 4px;
-  /* color: #444; */
   cursor: pointer;
   padding: 20px;
   display: flex;
@@ -34,12 +31,6 @@
   text-align: left;
   color: #ffffff;
   /* opacity: 0.5; */
-}
-
-.accordion:hover,
-.active {
-  /* color: #ffffff !important;
-  opacity: 1; */
 }
 
 /* Style the accordion chevron icon */
