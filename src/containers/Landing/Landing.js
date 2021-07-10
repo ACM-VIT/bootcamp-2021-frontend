@@ -83,7 +83,7 @@ const Landing = () => {
       <section className="flex pl-6 pr-6 md:pr-0 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24 md:w-120 lg:w-192 justify-start">
         <div className="mt-36 md:mt-20 grid z-100">
           <div>
-            <h3 className="font-600 text-custom">ACM-VIT Initiative</h3>
+            <h3 className="font-600 text-custom">An ACM-VIT Initiative</h3>
             <p className="font-600 mt-2 text-landing-xsmall md:leading-normal lg:leading-normal xl:leading-normal sm:text-landing-large md:w-120 lg:w-192 text-custom md:text-6xl xl:text-landing-large lg:text-6xl">
               Unlock your potential this{" "}
               <span className="text-yellow-400">summer!</span>
