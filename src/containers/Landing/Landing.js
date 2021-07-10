@@ -39,6 +39,7 @@ const Landing = () => {
         title: "Please enter an email",
         bgColor: "red",
         textColor: "#fff",
+        closeTimeInMs: 3000,
       });
       return;
     }
@@ -57,12 +58,22 @@ const Landing = () => {
         data: { success },
       } = res;
       if (success) {
-        showToast({ title: res.data.msg, bgColor: "green", textColor: "#fff" });
+        showToast({
+          title: res.data.msg,
+          bgColor: "green",
+          textColor: "#fff",
+          closeTimeInMs: 3000,
+        });
         setEmail("");
         localStorage.setItem("tk", true);
         setRegistered(true);
       } else {
-        showToast({ title: res.data.msg, bgColor: "red", textColor: "#fff" });
+        showToast({
+          title: res.data.msg,
+          bgColor: "red",
+          textColor: "#fff",
+          closeTimeInMs: 3000,
+        });
       }
       // const {success} = res.success;
     });
