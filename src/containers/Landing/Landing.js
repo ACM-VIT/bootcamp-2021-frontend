@@ -34,15 +34,29 @@ const Landing = () => {
     };
   }, []);
   const addUserToList = () => {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (email.length === 0) {
       showToast({
-        title: "Please enter an email",
+        title: "Please enter an email.",
         bgColor: "red",
         textColor: "#fff",
         closeTimeInMs: 3000,
       });
       return;
     }
+
+    if (!re.test(email)) {
+      showToast({
+        title: "The email provided is incorrect.",
+        bgColor: "red",
+        textColor: "#fff",
+        closeTimeInMs: 3000,
+      });
+      return;
+    }
+
     axios({
       method: "post",
       url: `https://email.acmvit.in/rsvp`,
