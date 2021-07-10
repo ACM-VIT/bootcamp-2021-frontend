@@ -198,7 +198,7 @@ const WorkshopSection = () => {
       {isAllInactive() ? (
         <div className="">
           {}
-          <div className="text-2xl sm:text-5xl px-6 mt-24 text-custom text-left sm:text-center font-600 pb-16">
+          <div className="text-2xl sm:text-5xl px-6 mt-24 md:mt-36 text-custom text-left sm:text-center font-600 pb-16">
             Offered Workshops
           </div>
           <div className="flex px-6 sm:px-16 justify-center xl:justify-around items-center flex-wrap">
