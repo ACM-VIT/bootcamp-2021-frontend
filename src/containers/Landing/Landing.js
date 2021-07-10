@@ -36,7 +36,7 @@ const Landing = () => {
   const addUserToList = () => {
     if (email.length === 0) {
       showToast({
-        title: "please enter an email",
+        title: "Please enter an email",
         bgColor: "red",
         textColor: "#fff",
       });

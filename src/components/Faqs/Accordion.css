@@ -6,6 +6,7 @@
   border: none;
   outline: none !important;
   border-radius: 12px;
+  z-index: -10;
   @apply w-11/12 lg:w-6/12 mb-6;
 }
 
@@ -40,6 +41,7 @@
   transform: rotate(90deg);
   width: 18px;
   height: 14px;
+  z-index: -10;
 }
 
 /* Style to rotate icon when state is active */
