@@ -177,7 +177,7 @@ const Landing = () => {
           />
         </div>
         <div className="md:hidden">
-          <a href="https://discord.gg/gBxsGyEp">
+          <a href="https://discord.gg/K9BTB3t9Ze">
             <img
               className="fixed h-24 top-112 right-0"
               src={DiscordMobile}
@@ -216,7 +216,7 @@ const Landing = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://discord.gg/gBxsGyEp"
+            href="https://discord.gg/K9BTB3t9Ze"
           >
             <img
               className="cursor-pointer"
