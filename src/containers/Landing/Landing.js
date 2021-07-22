@@ -105,10 +105,10 @@ const Landing = () => {
           </div>
           <div className="flex flex-col md:flex-row mt-12">
             <h3 className="font-500 mr-4 text-lg text-custom">
-              ML 101 starts in
+              Design 101 starts in
             </h3>
             <span className="text-yellow-grad mt-2 text-xl sm:mt-0 sm:text-2xl">
-              <CountDown date={`${year}-07-22T12:00:00`} />
+              <CountDown date={`${year}-07-25T12:00:00`} />
             </span>
           </div>
           <div className="mt-12 flex flex-col md:flex-row">
