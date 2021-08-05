@@ -51,6 +51,5 @@ npm start
 
 ## Authors
 
-**Authors:**
-[Anish Mittal](https://github.com/ANISH0309),
-[Likhit Ajeesh](https://github.com/Likkiii)
+- [Anish Mittal](https://github.com/ANISH0309)
+- [Likhit Ajeesh](https://github.com/Likkiii)
