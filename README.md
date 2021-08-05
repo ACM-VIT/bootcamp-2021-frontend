@@ -53,3 +53,9 @@ npm start
 
 - [Anish Mittal](https://github.com/ANISH0309)
 - [Likhit Ajeesh](https://github.com/Likkiii)
+
+---
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
